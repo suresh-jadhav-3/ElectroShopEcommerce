@@ -2,7 +2,6 @@
 import React, { useState } from 'react';
 import { BrowserRouter, Route, Routes} from 'react-router-dom';
 import Layout from './Layout';
-import Cart from './pages/CartPage';
 import Home from './pages/Home';
 import Product from './pages/Product';
 import LoginPage from './pages/Login';
