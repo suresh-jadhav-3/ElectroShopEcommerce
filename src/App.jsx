@@ -2,7 +2,16 @@
 import React, { useState } from 'react';
 import { BrowserRouter, Route, Routes} from 'react-router-dom';
 import Layout from './Layout';
-import { About, Home, LoginPage, Register, Product, SinglePage, Cart, Contact} from './pages'
+import Cart from './pages/CartPage';
+import Home from './pages/Home';
+import Product from './pages/Product';
+import LoginPage from './pages/Login';
+import Register from './pages/Register';
+import SinglePage from './pages/SinglePage';
+import Contact from './pages/Contact';
+import About from './pages/About';
+import CartPage from './pages/CartPage';
+
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -33,9 +42,9 @@ function App() {
     
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Layout cart={cart} />}>
+        <Route path='/' element={<Layout cart={Cart} />}>
           <Route path="/" element={<Home addToCart={addToCart} />} />
-          <Route path="/cart" element={<Cart cart={cart} setCart={setCart} />} />
+          <Route path="/cart" element={<CartPage cart={cart} setCart={setCart} />} />
           <Route path="/product" element={<Product addToCart={addToCart} />} />
           <Route path="/login" element={<LoginPage/>} />
           <Route path="/register" element={<Register/>} />

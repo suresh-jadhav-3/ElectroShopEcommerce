@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { ChevronRight, Minus, Plus, Trash2 } from 'lucide-react'
 
 
-function Cart({ cart, setCart }) {
+function CartPage({ cart, setCart }) {
 
   const navigate = useNavigate();
 
@@ -112,4 +112,4 @@ function Cart({ cart, setCart }) {
   )
 }
 
-export default Cart
+export default CartPage

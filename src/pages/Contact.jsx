@@ -1,4 +1,4 @@
-import { LocateIcon, Mail, MapPin, Phone } from 'lucide-react';
+import {  Mail, MapPin, Phone } from 'lucide-react';
 import React, { useState } from 'react';
 
 function Contact() {

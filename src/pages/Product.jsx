@@ -2,8 +2,8 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
-import {ShimmerEffect, Loader} from '../components'
-
+import ShimmerEffect from '../components/ShimmerEffect'
+import Loader from '../components/Loader';
 
 function Product({ addToCart }) {
   const [categories, setCategories] = useState([]);

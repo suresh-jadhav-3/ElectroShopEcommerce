@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
-import {Loader} from '../components';
+import Loader from '../components/Loader';
 import { Star } from 'lucide-react';
 
 function SinglePage({ addToCart }) {

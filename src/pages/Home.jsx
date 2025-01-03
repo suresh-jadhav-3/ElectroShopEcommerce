@@ -1,6 +1,9 @@
 import React from 'react'
-import { BrandSlider, Features, Hero, PopularProduct, Service } from '../components'
-
+import Hero from '../components/Hero'
+import Features from '../components/Feature'
+import Service from '../components/Service'
+import PopularProduct from '../components/PopularProduct'
+import BrandSlider from '../components/TopBrand'
 
 function Home({ addToCart }) {
   return (
@@ -10,6 +13,7 @@ function Home({ addToCart }) {
       <Service />
       <PopularProduct addToCart={addToCart} />
       <BrandSlider />
+      
     </>
   )
 }
