@@ -42,7 +42,7 @@ function App() {
     
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Layout cart={Cart} />}>
+        <Route path='/' element={<Layout cart={cart} />}>
           <Route path="/" element={<Home addToCart={addToCart} />} />
           <Route path="/cart" element={<CartPage cart={cart} setCart={setCart} />} />
           <Route path="/product" element={<Product addToCart={addToCart} />} />
