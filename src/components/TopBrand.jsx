@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import poco from '../assets/poco.jpg';
 import Iphone from '../assets/Iphone.png';
 import Realme from '../assets/Realme.jpg';
-import samsung from '../assets/samsung.jpg';
+import samsung from '../assets/Samsung.jpg';
 
 const BrandSlider = () => {
   const brands = [
