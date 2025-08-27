@@ -19,12 +19,13 @@ const Hero = () => {
       try {
         const response = await axios.get(API_URL);
         const products = response.data.products
-          .slice(0, MAX_PRODUCTS) 
-          .map((product) => ({
-            title: product.title.split(' ').slice(0, 3).join(' '), 
-            subtitle: `Only $${product.price}`,
-            img: product.image,
-          }));
+  .slice(0, MAX_PRODUCTS)
+  .map((product) => ({
+    title: product.title.split(' ').slice(0, 3).join(' '),
+    subtitle: `Only $${product.price}`,
+    img: encodeURI(product.image),  // <-- FIX HERE
+  }));
+
         setSlides(products);
       } catch (error) {
         console.error('Error fetching products:', error);
