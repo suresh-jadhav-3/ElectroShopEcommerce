@@ -10,6 +10,7 @@ import SinglePage from './pages/SinglePage';
 import Contact from './pages/Contact';
 import About from './pages/About';
 import CartPage from './pages/CartPage';
+// import
 
 
 function App() {
