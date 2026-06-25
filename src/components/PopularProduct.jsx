@@ -19,7 +19,7 @@ function PopularProduct({ addToCart }) {
         const fetchData = async () => {
             try {
                 setLoading(true);
-                const trendingRes = await axios("https://fakestoreapi.in/api/products?limit=50");
+                const trendingRes = await axios("https://fakestoreapi.com/products?limit=50");
                 const shuffledProducts = shuffleArray(trendingRes.data.products);
                 setProduct(shuffledProducts.slice(0, 4));
             } catch (error) {
