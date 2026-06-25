@@ -2,7 +2,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import axios from 'axios';
 
-const API_URL = 'https://fakestoreapi.in/api/products/category?type=mobile';
+const API_URL = 'https://fakestoreapi.com/products/category?type=mobile';
 const SLIDE_INTERVAL = 5000; 
 const MAX_PRODUCTS = 4; 
 
