@@ -16,8 +16,6 @@ import CartPage from './pages/CartPage';
 function App() {
   const [cart, setCart] = useState([]);
 
-  
-
   const addToCart = (product) => {
     
       setCart((prevCart) => {

@@ -5,6 +5,7 @@ import { ChevronRight, Minus, Plus, Trash2 } from 'lucide-react'
 
 function CartPage({ cart, setCart }) {
 
+  
   const navigate = useNavigate();
 
   const truncateTitle = (title, maxLength) => {
@@ -60,7 +61,7 @@ function CartPage({ cart, setCart }) {
               {cart.map((item, index) => (
                 <div key={index} className="grid grid-cols-1 lg:grid-cols-2 min-[550px]:gap-6 border-t border-gray-200 py-6">
                   <div className="flex items-center flex-col min-[550px]:flex-row gap-3 min-[550px]:gap-6 w-full max-xl:justify-center max-xl:max-w-xl max-xl:mx-auto">
-                    <div className="img-box"><img src={item.image} alt="perfume bottle image" className="xl:w-[140px] rounded-xl object-cover" /></div>
+                    <div className="img-box "><img src={item.thumbnail} alt="perfume bottle image" className="xl:w-[140px] rounded-xl object-cover" /></div>
                     <div className="pro-data w-full max-w-sm ">
                       <h5 className="font-semibold text-xl leading-8 text-black max-[550px]:text-center">{truncateTitle(item.title, 25)}</h5>
                       <p className="font-normal text-lg leading-8 text-gray-500 my-2 min-[550px]:my-3 max-[550px]:text-center">{item.brand}</p>
